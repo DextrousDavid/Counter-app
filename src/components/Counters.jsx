@@ -16,6 +16,9 @@ class Counters extends Component {
         <button className="btn mt-3 mb-1 btn-outline-info " onClick={onRefresh}>
           Refresh
         </button>
+        <a className="btn btn-outline-info mt-3 mb-1 ml-3" href="/">
+          Reset
+        </a>
         {counters.map(counter => (
           <Counter
             key={counter.id}
@@ -26,9 +29,7 @@ class Counters extends Component {
             onReset={onReset}
           />
         ))}
-        <a className="btn btn-outline-info mt-3" href="/">
-          Reset
-        </a>
+
         {/* <button
           className="btn m-3 btn-outline-info "
           onClick={this.onReset}
