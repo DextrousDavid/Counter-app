@@ -50,12 +50,6 @@ class App extends Component {
   };
 
   //Refresh Handler incomplete
-  // handleReset = () => {
-  //   const counters = this.state.counters.map(c => {
-  //     return <Counters />;
-  //   });
-  //   this.setState({ counters });
-  // };
   render() {
     return (
       <React.Fragment>

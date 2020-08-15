@@ -8,11 +8,12 @@ class Counters extends Component {
       counters,
       onDecrement,
       onDelete,
+      onReset,
       onIncrement,
     } = this.props;
     return (
       <div>
-        <button className="btn m-3 btn-outline-info " onClick={onRefresh}>
+        <button className="btn mt-3 mb-1 btn-outline-info " onClick={onRefresh}>
           Refresh
         </button>
         {counters.map(counter => (
@@ -22,9 +23,12 @@ class Counters extends Component {
             onDelete={onDelete}
             onIncrement={onIncrement}
             onDecrement={onDecrement}
+            onReset={onReset}
           />
         ))}
-        <br />
+        <a className="btn btn-outline-info mt-3" href="/">
+          Reset
+        </a>
         {/* <button
           className="btn m-3 btn-outline-info "
           onClick={this.onReset}
